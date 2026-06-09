@@ -1,7 +1,7 @@
 [project]
 name = "agent-reach"
 version = "1.4.0"
-description = "Give your AI Agent eyes to see the entire internet. Search + Read 10+ platforms."
+description = "Give your AI Agent eyes to see the entire internet. Search + Read 16+ platforms."
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.10"

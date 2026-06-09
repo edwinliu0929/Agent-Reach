@@ -6,6 +6,51 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## [Unreleased]
+
+### 🐛 Fixes / 修复
+- doctor 现在能检测 Reddit 登录状态 / doctor now detects Reddit auth status (#261)
+- 修复 Windows 上 doctor 误判微信公众号渠道不可用 / Fixed WeChat 公众号 false-negative in doctor on Windows (#263)
+
+### 📚 Docs & i18n / 文档与多语言
+- English skill locale support (#223)
+- Korean README translation (#251); Douyin MCP install/config doc fixes (#256, #257)
+- Added SECURITY.md (#254)
+
+> 以上为 v1.4.0 tag 之后、尚未打新版本号的 main 分支变更 / Changes on `main` after the v1.4.0 tag, not yet released under a new version.
+
+---
+
+## [1.4.0] - 2026-03-31
+
+### 🔄 Upstream Migrations / 上游工具迁移
+
+After several upstream tools broke or were deleted, most channels were re-pointed to actively-maintained upstreams. 在多个上游工具失效/删除后，把大部分渠道重新指向活跃维护的上游工具。
+
+- **Twitter/X:** migrated from the deleted `bird` CLI to `twitter-cli`; later supports both and never uninstalls user-installed tools (#231)
+- **Reddit + B站:** Reddit switched to `rdt-cli`, added `bili-cli` for Bilibili; Reddit no longer needs a proxy (#235)
+- **小红书 / XiaoHongShu:** switched from Docker MCP to `xhs-cli` (pipx install) (#236)
+- **微信公众号 / WeChat:** search switched from miku_ai to Exa, upgraded to tier 0 (zero-config) (#233)
+- **雪球 / Xueqiu:** added `rookiepy` as primary cookie backend, browser_cookie3 as fallback (#232)
+- **YouTube:** platform-aware yt-dlp config path + locale-safe reads (#225)
+
+### 🆕 New / 新增
+
+- **小宇宙播客 / Xiaoyuzhou:** podcast audio-to-text via Groq Whisper (#124)
+- **Web `read()`** via Jina Reader, plus a skill-install fallback (#238)
+- Channel count / 渠道数量: 15 → 16
+
+### 📦 Install & Skill / 安装与 Skill
+
+- `agent-reach install` split into **core + optional channels** via a `--channels` flag (#237)
+- Skill system refactored into a **router + references** structure (#192)
+
+### 🧹 Removed / 移除
+
+- Removed the trial Discord and Toutiao channels after upstream issues (#234)
+
+---
+
 ## [1.3.1] - 2026-03-27
 
 ### 🐛 Bug Fixes / 修复

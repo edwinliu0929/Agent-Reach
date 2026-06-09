@@ -2,7 +2,7 @@
 name: agent-reach
 description: >
   Give your AI agent eyes to see the entire internet.
-  Search and read 17 platforms: Twitter/X, Reddit, YouTube, GitHub, Bilibili,
+  Search and read 16 platforms: Twitter/X, Reddit, YouTube, GitHub, Bilibili,
   XiaoHongShu, Douyin, Weibo, WeChat Articles, Xiaoyuzhou Podcast, LinkedIn,
   V2EX, Xueqiu, RSS, Exa web search, and any web page.
   Zero config for 8 channels. Use when the user asks to search, read, or interact
@@ -20,7 +20,7 @@ metadata:
 
 # Agent Reach — Usage Guide
 
-Upstream tools for 17 platforms. Call them directly.
+Upstream tools for 16 platforms. Call them directly.
 
 Run `agent-reach doctor` to check which channels are available.
 
